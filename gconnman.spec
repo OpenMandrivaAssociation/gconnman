@@ -4,7 +4,7 @@
 
 Name: gconnman
 Summary: A GObject binding of the Connman D-Bus API
-Group: User Interface/Desktops
+Group: System/Configuration/Networking
 Version: 0.5.0
 License: LGPL 2.1
 URL: http://www.moblin.org
