@@ -10,12 +10,11 @@ License: LGPL 2.1
 URL: http://www.moblin.org
 Release: %mkrel 3
 Source0: http://git.moblin.org/cgit.cgi/%{name}/snapshot/%{name}-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
-BuildRequires: libmesagl-devel
+BuildRequires: pkgconfig(gl)
 BuildRequires: libglib2-devel
-BuildRequires: libdbus-glib-devel
-BuildRequires: gtk+2-devel
+BuildRequires: pkgconfig(dbus-glib-1)
+BuildRequires: pkgconfig(gtk+-2.0)
 BuildRequires: connman-devel
 BuildRequires: intltool
 BuildRequires: gettext
@@ -53,21 +52,14 @@ perl -pi -e 's,^./configure.*,,' ./autogen.sh
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files -n %{libname}
-%defattr(-,root,root,-)
 %doc README AUTHORS ChangeLog COPYING NEWS
 %{_libdir}/libgconnman*.so.*
 
 %files -n %{develname}
-%defattr(-,root,root,-)
 %{_includedir}/%{name}/*.h
 %{_libdir}/pkgconfig/*.pc
 %{_libdir}/libgconnman*.so
 %{_libdir}/libgconnman*.a
-%{_libdir}/libgconnman*.la
