@@ -12,7 +12,7 @@ Release: %mkrel 3
 Source0: http://git.moblin.org/cgit.cgi/%{name}/snapshot/%{name}-%{version}.tar.bz2
 
 BuildRequires: pkgconfig(gl)
-BuildRequires: libglib2-devel
+BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(dbus-glib-1)
 BuildRequires: pkgconfig(gtk+-2.0)
 BuildRequires: connman-devel
