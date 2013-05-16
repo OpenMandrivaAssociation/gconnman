@@ -8,7 +8,7 @@ Group: System/Configuration/Networking
 Version: 0.5.0
 License: LGPL 2.1
 URL: http://www.moblin.org
-Release: %mkrel 3
+Release: 4
 Source0: http://git.moblin.org/cgit.cgi/%{name}/snapshot/%{name}-%{version}.tar.bz2
 
 BuildRequires: pkgconfig(gl)
