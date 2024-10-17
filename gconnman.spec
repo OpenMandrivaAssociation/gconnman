@@ -7,7 +7,7 @@ Summary: A GObject binding of the Connman D-Bus API
 Group: System/Configuration/Networking
 Version: 0.5.0
 License: LGPL 2.1
-URL: http://www.moblin.org
+URL: https://www.moblin.org
 Release: 5
 Source0: http://git.moblin.org/cgit.cgi/%{name}/snapshot/%{name}-%{version}.tar.bz2
 
